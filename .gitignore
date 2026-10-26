@@ -1,0 +1,27 @@
+# Runtime data — never commit a local knowledge base
+local_context.db
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Dependencies and package-manager state (this package has none)
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+
+# Logs and test output
+*.log
+logs/
+coverage/
+.tmp/
+*.tgz
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp

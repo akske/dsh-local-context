@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Local Context",
+    "description": "Zero-dependency FTS5 knowledge base: run shell commands with smart truncation, index text, and search the stored originals by relevance."
+  }
+}

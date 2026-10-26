@@ -1,0 +1,21 @@
+# dsh-local-context bundle patch.
+#
+# Installs one row into the composed DSH plugin tree. The package uses only
+# Node builtins, so it declares no dependencies and needs no build step.
+#
+# Optional config keys (omit all of them for the defaults):
+#   dbPath    absolute SQLite file path.
+#             Default: $DSH_HOME/local-context/local_context.db
+#             (usually ~/.dsh/local-context/local_context.db)
+#   bashPath  explicit bash executable.
+#             Default: PATH, then common Git for Windows locations.
+#   pwshPath  explicit pwsh/powershell executable.
+#             Default: PATH, then PowerShell 7 / Windows PowerShell.
+#
+# Example override:
+#   config:
+#     dbPath: 'D:/data/dsh-local-context.db'
+
+- insert:
+    - id: local-context
+      name: dsh-local-context

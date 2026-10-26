@@ -1,0 +1,47 @@
+{
+  "name": "dsh-local-context",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Zero-native-dependency local FTS5 knowledge base for DeepSeek Harness: smart shell-output truncation, text indexing, and CJK-friendly relevance search.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/*.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "local-context",
+    "context-mode",
+    "fts5",
+    "sqlite",
+    "knowledge-base",
+    "truncation",
+    "zero-dependency",
+    "node-sqlite"
+  ]
+}
